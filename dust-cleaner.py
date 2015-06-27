@@ -5,9 +5,9 @@
 # groups small 'dust' transactions with zero or minimal fee
 #
 
-COIN_NAME = "myriadcoin"
-COIN_CODE = "MYR"
-COIN_RPC_PORT = "10889"
+COIN_NAME = "groestlcoin"
+COIN_CODE = "GRS"
+COIN_RPC_PORT = "1441"
 FREE_BLOCK_SIZE = 1000
 FREE_PRIORITY_THRESHOLD = 0.576
 FEE_PER_BLOCK = 0.0001
@@ -99,7 +99,7 @@ def create_json_tx(tx_list, pay_to, tx_amount, fee):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description = "Joins 'dust' received payments into a manageable new bigger payment to the given address, with minimal transaction fee.")
-    parser.add_argument("address", help = "The MYR address to send the aggregated payments.")
+    parser.add_argument("address", help = "The GRS address to send the aggregated payments.")
     parser.add_argument("-f", "--max_fee", help = "The maximum transaction fee allowed. Creates transaction with no fees if omitted.", type = float)
     parser.add_argument("-i", "--ignore", help = "Address not to be included in the new transaction. \"address\" is always ignored. Can be called multiple times for more than one address.", action = "append")
     parser.add_argument("-o", "--rpc_url", help = "The wallet RPC URL. Default: localhost:" + COIN_RPC_PORT + ".")
