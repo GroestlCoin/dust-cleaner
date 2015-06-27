@@ -6,7 +6,7 @@ Joins "dust" payments created by p2pool into bigger transactions with minimal fe
 Requirements:
 -------------------------
 Generic:
-* Myriadcoin >=0.9.2.7
+* Groestlcoin >=2.1.0.6
 * Python >=2.6
 
 Linux:
@@ -15,20 +15,16 @@ Linux:
 
 Running dust-cleaner.py:
 -------------------------
-* Install your local myriadcoind
+* Install your local groestlcoind
 * Import the private keys with the 'dust' payments into the local wallet
 * Run dust-cleaner.py in test mode first, to confirm that your wallet is properly
 set and that you are using the correct parameters.
 
 `./dust-cleaner.py <destination-address>`
 
-Replace `<destination-address>` with the Myriadcoin address to receive the new
+Replace `<destination-address>` with the Groestlcoin address to receive the new
 created transaction.
 
 For additional options:
 
 `./dust-cleaner.py --help`
-
-Donations are welcome to support this project:
-* MKJxatRKSw9gTN1VJfVcHPDAbSKxWq97L5 (Myriadcoin)
-* 1JffmEok4VbN3ZfGnHx84q9PEcHfH4Qfyw (Bitcoin)
